@@ -49,17 +49,19 @@ public class App
         yasmin.escolaridades = Arrays.asList(e1,e2);
 
         System.out.println("Nome Completo "+yasmin.nomeCompleto);
-        System.out.println("Idade: "+ Period.between(yasmin.dataNascimento, 
-            LocalDate.now()).getYears());
+        System.out.println("Idade: "+ yasmin.calcularIdade());
         System.out.println("Endereço:" + yasmin.endereco.logradouro);
 
         for (Escolaridade escolaridade : yasmin.escolaridades) {
             System.out.println(escolaridade.nomeCurso+" - "+escolaridade.nomeInstituicao);
    
-    }
-
-
+        } 
+        }
     } 
-}
+    
+
+
+    
+
 
        
